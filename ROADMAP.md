@@ -4,22 +4,22 @@ This document outlines the step-by-step development plan for the project, separa
 
 ## Phase 1: Project Setup & Core CLI <!-- phase:project-setup -->
 
-- [ ] Initialize the project repository and set up version control conventions. (#1)
-- [ ] Define the base directory structure (separating core engine, api, and web frontend). (#2)
-- [ ] Set up Python virtual environment and basic dependencies (e.g., `requests`, `beautifulsoup4`). (#3)
-- [ ] Create a basic Command Line Interface (CLI) entry point using `argparse` or `Typer`. (#4)
-- [ ] Implement robust error handling for HTTP requests and invalid URLs in the core engine. (#5)
-- [ ] Set up standard logging configuration for the core engine execution. (#6)
+- [x] Initialize the project repository and set up version control conventions. (#1)
+- [x] Define the base directory structure (separating core engine, api, and web frontend). (#2)
+- [x] Set up Python virtual environment and basic dependencies (e.g., `requests`, `beautifulsoup4`). (#3)
+- [x] Create a basic Command Line Interface (CLI) entry point using `argparse` or `Typer`. (#4)
+- [x] Implement robust error handling for HTTP requests and invalid URLs in the core engine. (#5)
+- [x] Set up standard logging configuration for the core engine execution. (#6)
 
 ## Phase 2: SEO Analysis Engine <!-- phase:seo-engine -->
 
-- [ ] Implement extractor for standard meta tags (Title, Description, Keywords). (#7)
-- [ ] Implement extractor for Open Graph (OG) and Twitter Card meta tags. (#8)
-- [ ] Create a module to analyze header tag hierarchy (H1, H2, H3) and detect missing H1s. (#9)
-- [ ] Implement a checker for missing `alt` attributes on image tags. (#10)
-- [ ] Analyze text-to-HTML ratio and calculate basic word count statistics. (#11)
-- [ ] Create a module to check for robots.txt presence and basic allow/disallow rules. (#12)
-- [ ] Implement canonical URL verification. (#13)
+- [x] Implement extractor for standard meta tags (Title, Description, Keywords). (#7)
+- [x] Implement extractor for Open Graph (OG) and Twitter Card meta tags. (#8)
+- [x] Create a module to analyze header tag hierarchy (H1, H2, H3) and detect missing H1s. (#9)
+- [x] Implement a checker for missing `alt` attributes on image tags. (#10)
+- [x] Analyze text-to-HTML ratio and calculate basic word count statistics. (#11)
+- [x] Create a module to check for robots.txt presence and basic allow/disallow rules. (#12)
+- [x] Implement canonical URL verification. (#13)
 
 ## Phase 3: Sitemap & Crawler Module <!-- phase:sitemap-crawler -->
 
