@@ -48,28 +48,28 @@ This document outlines the step-by-step development plan for the project, separa
 
 ## Phase 6: Backend API Configuration (FastAPI) <!-- phase:api-setup -->
 
-- [/] Initialize the FastAPI application structure within the project. (#30)
-- [/] Configure standard middlewares (CORS for Next.js frontend frontend, GZip). (#31)
-- [/] Set up SQLite database connection using SQLAlchemy or SQLModel. (#32)
-- [/] Define database schema and ORM models (Analyses, URLs, SEO Results, Security Results). (#33)
-- [ ] Implement Alembic for database migrations. (#34)
+- [x] Initialize the FastAPI application structure within the project. (#30)
+- [x] Configure standard middlewares (CORS for Next.js frontend frontend, GZip). (#31)
+- [x] Set up SQLite database connection using SQLAlchemy or SQLModel. (#32)
+- [x] Define database schema and ORM models (Analyses, URLs, SEO Results, Security Results). (#33)
+- [x] Implement Alembic for database migrations. (#34)
 
 ## Phase 7: API Endpoints & Background Tasks <!-- phase:api-endpoints -->
 
-- [ ] Create `POST /api/scan` endpoint to receive target URLs and trigger the core engine. (#35)
-- [ ] Implement background task processing (e.g., Celery, RQ, or FastAPI `BackgroundTasks`) for long-running scans. (#36)
-- [ ] Create endpoints for WebSocket or Server-Sent Events (SSE) to stream live scan progress to the frontend. (#37)
-- [ ] Create `GET /api/reports/{id}` endpoint to fetch the complete JSON results of a specific scan. (#38)
-- [ ] Create `GET /api/reports` endpoint with pagination to list scan history. (#39)
-- [ ] Implement direct download endpoints for generated MD and JSONC files (e.g., `/api/export/md/{id}`). (#40)
+- [x] Create `POST /api/scan` endpoint to receive target URLs and trigger the core engine. (#35)
+- [x] Implement background task processing (e.g., Celery, RQ, or FastAPI `BackgroundTasks`) for long-running scans. (#36)
+- [x] Create endpoints for WebSocket or Server-Sent Events (SSE) to stream live scan progress to the frontend. (#37)
+- [x] Create `GET /api/reports/{id}` endpoint to fetch the complete JSON results of a specific scan. (#38)
+- [x] Create `GET /api/reports` endpoint with pagination to list scan history. (#39)
+- [x] Implement direct download endpoints for generated MD and JSONC files (e.g., `/api/export/md/{id}`). (#40)
 
 ## Phase 8: Web Frontend Setup (Next.js) <!-- phase:frontend-setup -->
 
-- [ ] Initialize Next.js (App Router) project with TypeScript and TailwindCSS. (#41)
-- [ ] Install and configure Shadcn/UI (or similar Radix-based component library). (#42)
-- [ ] Define the global design system, color tokens, and dark/light mode functionality. (#43)
-- [ ] Design and implement the primary application Shell (sidebar navigation, header, layout). (#44)
-- [ ] Configure API client (e.g., Axios or native fetch) for communicating with the FastAPI backend. (#45)
+- [x] Initialize Next.js project inside the `web/` directory using TypeScript and chosen framework. (#41)
+- [x] Set up global styles (`globals.css`) and basic layout components (Navbar, Footer, Sidebar). (#42)
+- [x] Create UI components for entering target URLs and initiating scans. (#43)
+- [x] Implement Server-Sent Events (SSE) consumer in the frontend to display live progress bars and real-time logs. (#44)
+- [x] Build Dashboard Overview page featuring high-level metrics (cards for total URLs, security score, broken links). (#45)
 
 ## Phase 9: Web Frontend Features & Views <!-- phase:frontend-features -->
 

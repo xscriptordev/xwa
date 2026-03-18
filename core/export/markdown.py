@@ -15,14 +15,14 @@ def export_markdown(data: Dict[str, Any], output_path: str) -> str:
     sitemap = data.get('sitemap', {})
     security = data.get('security', {})
     
-    md = f"""# 📊 xwa - Web Analysis Report
+    md = f"""# xwa - Web Analysis Report
 
 **Target URL:** `{url}`
 **Scan Timestamp:** `{time}`
 
 ---
 
-## 🔍 1. SEO Analysis
+## 1. SEO Analysis
 
 ### Standard Meta Tags
 - **Title:** {seo.get('standard_meta', {}).get('title', 'N/A')}
@@ -36,7 +36,7 @@ def export_markdown(data: Dict[str, Any], output_path: str) -> str:
 
 ---
 
-## 🗺️ 2. Sitemap & Crawler
+## 2. Sitemap & Crawler
 
 - **URLs Found in Sitemap:** {sitemap.get('urls_found', 0)}
 - **URLs Scanned:** {sitemap.get('scanned_count', 0)}
@@ -51,7 +51,7 @@ def export_markdown(data: Dict[str, Any], output_path: str) -> str:
     md += f"""
 ---
 
-## 🛡️ 3. Security Analysis
+## 3. Security Analysis
 
 ### SSL / TLS
 - **Valid:** {security.get('ssl', {}).get('valid', False)}
@@ -69,7 +69,7 @@ def export_markdown(data: Dict[str, Any], output_path: str) -> str:
 {len(security.get('sensitive_paths_found', []))} paths exposed.
 """
     for path in security.get('sensitive_paths_found', []):
-        md += f"- ⚠️ `{path}`\n"
+        md += f"- `{path}`\n"
         
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
     

@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from api.db.database import engine
 from sqlmodel import SQLModel
+from api.routers import scan, reports
 
 app = FastAPI(
     title="xwa - Web Analysis Dashboard API",
@@ -23,6 +24,9 @@ app.add_middleware(
 )
 
 app.add_middleware(GZipMiddleware, minimum_size=1000)
+
+app.include_router(scan.router, prefix="/api", tags=["Scanner"])
+app.include_router(reports.router, prefix="/api", tags=["Reports"])
 
 @app.get("/")
 def root():
