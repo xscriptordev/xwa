@@ -73,14 +73,11 @@ This document outlines the step-by-step development plan for the project, separa
 
 ## Phase 9: Web Frontend Features & Views <!-- phase:frontend-features -->
 
-- [ ] Implement the Home Dashboard view with a main input field for initiating new site scans. (#46)
-- [ ] Develop interactive loading states and progress bars using real-time data from the API. (#47)
-- [ ] Build the "Scan Summary" component showing overall scores and high-level metrics. (#48)
-- [ ] Create the "SEO Dashboard" tab with specific cards for missing tags, headings structure, and warnings. (#49)
-- [ ] Implement the "Sitemap Visualizer" tab using a library like D3.js or react-flow to render the route tree. (#50)
-- [ ] Build the "Vulnerabilities" tab with data tables detailing security headers and sensitive path findings. (#51)
-- [ ] Add download buttons securely linked to the API export endpoints (JSONC & Markdown). (#52)
-- [ ] Build the "Scan History" page to list and filter previous analyses. (#53)
+- [x] Create detailed SEO Analysis view component (Meta tags, Structure, Images). (#46)
+- [x] Create detailed Sitemap Analysis view component (Visual tree, Broken links table). (#47)
+- [x] Create detailed Security Analysis view component (Headers, SSL status, Exposures). (#48)
+- [x] Build the Scan History page (`/reports`) displaying past scans in a paginated table. (#49)
+- [x] Implement responsive design for mobile and tablet views, including Light/Dark themes. (#50)
 
 ## Phase 10: Local Multiplatform Tooling <!-- phase:local-tooling -->
 

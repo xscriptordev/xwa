@@ -8,8 +8,8 @@ export default function ScanForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleScan = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleScan = async (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
     if (!url) return;
     
     setLoading(true);
@@ -38,7 +38,7 @@ export default function ScanForm() {
   };
 
   return (
-    <form className="scan-form glass-panel" onSubmit={handleScan}>
+    <div className="scan-form glass-panel">
       <div className="input-wrapper">
         <svg className="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="11" cy="11" r="8"></circle>
@@ -48,13 +48,14 @@ export default function ScanForm() {
           type="url" 
           value={url}
           onChange={(e) => setUrl(e.target.value)}
+          onKeyDown={(e) => { if (e.key === 'Enter') handleScan(); }}
           placeholder="https://example.com" 
           required
           className="url-input"
           disabled={loading}
         />
       </div>
-      <button type="submit" className="btn-primary scan-btn" disabled={loading}>
+      <button type="button" onClick={handleScan} className="btn-primary scan-btn" disabled={loading}>
         {loading ? (
           <span className="loader-spin"></span>
         ) : (
@@ -63,6 +64,6 @@ export default function ScanForm() {
       </button>
       
       {error && <p className="error-text">{error}</p>}
-    </form>
+    </div>
   );
 }
