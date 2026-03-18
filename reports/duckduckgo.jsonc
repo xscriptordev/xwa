@@ -1,0 +1,104 @@
+// xwa - Web Analysis & SEO Dashboard
+// Target: https://duckduckgo.com
+// Generated at: 2026-03-18T17:08:29.729566Z
+{
+    "target_url": "https://duckduckgo.com",
+    "scan_timestamp": "2026-03-18T17:08:29.729409Z",
+    "seo": {
+        "standard_meta": {
+            "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+            "description": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs.",
+            "keywords": null,
+            "author": null,
+            "robots": null
+        },
+        "social_meta": {
+            "og": {
+                "url": "https://duckduckgo.com",
+                "type": "website",
+                "site_name": "DuckDuckGo",
+                "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+                "description": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs.",
+                "image": "https://duckduckgo.com/assets/logo_social-media.png"
+            },
+            "twitter": {
+                "card": "summary_large_image",
+                "site": "@duckduckgo",
+                "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+                "description": "The Internet privacy company that empowers you to seamlessly take control of your personal information online, without any tradeoffs.",
+                "image": "https://duckduckgo.com/assets/logo_social-media.png"
+            }
+        },
+        "headings": {
+            "counts": {
+                "h1": 2,
+                "h2": 0,
+                "h3": 0,
+                "h4": 0,
+                "h5": 0,
+                "h6": 1
+            },
+            "missing_h1": false,
+            "multiple_h1": true
+        },
+        "image_alts": {
+            "total_images": 2,
+            "missing_alt": 0,
+            "missing_alt_urls": []
+        },
+        "text_ratio": {
+            "html_size_bytes": 160645,
+            "text_size_bytes": 171,
+            "text_to_html_ratio": 0.11,
+            "word_count": 17
+        },
+        "canonical": "https://duckduckgo.com/",
+        "robots_txt": {
+            "presence": true,
+            "url": "https://duckduckgo.com/robots.txt",
+            "status_code": 200
+        }
+    },
+    "sitemap": {
+        "urls_found": 26,
+        "scanned_count": 26,
+        "broken_links": [
+            {
+                "url": "https://duckduckgo.com/static-assets/files/pages/careers/recruit-gdpr-processing-notice-1_11_20.pdf",
+                "status": 410,
+                "ok": false
+            }
+        ]
+    },
+    "security": {
+        "headers": {
+            "headers_present": {
+                "strict-transport-security": "max-age=31536000",
+                "content-security-policy": "default-src 'none' ; connect-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; manifest-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; media-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; script-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com 'unsafe-inline' 'unsafe-eval' ; font-src data:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; img-src data:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; style-src  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com 'unsafe-inline' ; object-src 'none' ; worker-src blob: ; child-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-src blob:  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; form-action  https://duck.ai https://*.duck.ai https://duckduckgo.com https://*.duckduckgo.com https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/ https://spreadprivacy.com ; frame-ancestors 'self' https://html.duckduckgo.com; base-uri 'self' ; block-all-mixed-content ;",
+                "x-frame-options": "SAMEORIGIN",
+                "x-content-type-options": "nosniff",
+                "referrer-policy": "origin",
+                "permissions-policy": "interest-cohort=()"
+            },
+            "missing_headers": [],
+            "leaked_server_info": {
+                "server": "nginx"
+            },
+            "score_penalty": 0
+        },
+        "ssl": {
+            "valid": true,
+            "issuer": "DigiCert Inc",
+            "subject": "*.duckduckgo.com",
+            "days_remaining": 277,
+            "expires_on": "2026-12-20 23:59:59",
+            "is_expired": false
+        },
+        "cookies": {
+            "total": 0,
+            "cookies": [],
+            "issues": []
+        },
+        "sensitive_paths_found": []
+    }
+}

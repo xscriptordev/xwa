@@ -23,35 +23,35 @@ This document outlines the step-by-step development plan for the project, separa
 
 ## Phase 3: Sitemap & Crawler Module <!-- phase:sitemap-crawler -->
 
-- [ ] Implement function to automatically locate and download `sitemap.xml` (or `sitemap_index.xml`). (#14)
-- [ ] Parse XML content to extract all listed URLs efficiently. (#15)
-- [ ] Implement a concurrent HTTP crawler (e.g., using `asyncio` and `aiohttp`) to validate URL status codes. (#16)
-- [ ] Detect and report broken links (404s) and redirect chains (301/302). (#17)
-- [ ] Develop an algorithm to transform a flat list of URL paths into a hierarchical tree structure. (#18)
-- [ ] Implement rate limiting and sensible timeouts to avoid overloading target servers. (#19)
+- [x] Implement function to automatically locate and download `sitemap.xml` (or `sitemap_index.xml`). (#14)
+- [x] Parse XML content to extract all listed URLs efficiently. (#15)
+- [x] Implement a concurrent HTTP crawler (e.g., using `asyncio` and `aiohttp`) to validate URL status codes. (#16)
+- [x] Detect and report broken links (404s) and redirect chains (301/302). (#17)
+- [x] Develop an algorithm to transform a flat list of URL paths into a hierarchical tree structure. (#18)
+- [x] Implement rate limiting and sensible timeouts to avoid overloading target servers. (#19)
 
 ## Phase 4: Security Analysis Module <!-- phase:security-engine -->
 
-- [ ] Scanner for missing or misconfigured security headers (CORS, HSTS, X-Frame-Options, CSP). (#20)
-- [ ] Implement basic SSL/TLS certificate analysis (expiration date, issuer, validation status). (#21)
-- [ ] Create a passive directory brute-forcer to detect common sensitive paths (`/.git/`, `/.env`, `/wp-admin/`, etc.). (#22)
-- [ ] Detect leaked server information headers (e.g., `X-Powered-By`, `Server`). (#23)
-- [ ] Check for basic cookie security flags (`HttpOnly`, `Secure`, `SameSite`). (#24)
+- [x] Scanner for missing or misconfigured security headers (CORS, HSTS, X-Frame-Options, CSP). (#20)
+- [x] Implement basic SSL/TLS certificate analysis (expiration date, issuer, validation status). (#21)
+- [x] Create a passive directory brute-forcer to detect common sensitive paths (`/.git/`, `/.env`, `/wp-admin/`, etc.). (#22)
+- [x] Detect leaked server information headers (e.g., `X-Powered-By`, `Server`). (#23)
+- [x] Check for basic cookie security flags (`HttpOnly`, `Secure`, `SameSite`). (#24)
 
 ## Phase 5: Export & Serialization Engine <!-- phase:export-engine -->
 
-- [ ] Define standardized internal data classes (e.g., Pydantic models) to hold all analysis results. (#25)
-- [ ] Create a unified serializer that converts internal data models to primitive Python dictionaries. (#26)
-- [ ] Implement JSONC (JSON with Comments) formatting and file generation. (#27)
-- [ ] Develop a Markdown (MD) report generator using Jinja2 templates or string formatting. (#28)
-- [ ] Add CLI flags to specify output formats and export destination paths. (#29)
+- [x] Define standardized internal data classes (e.g., Pydantic models) to hold all analysis results. (#25)
+- [x] Create a unified serializer that converts internal data models to primitive Python dictionaries. (#26)
+- [x] Implement JSONC (JSON with Comments) formatting and file generation. (#27)
+- [x] Develop a Markdown (MD) report generator using Jinja2 templates or string formatting. (#28)
+- [x] Add CLI flags to specify output formats and export destination paths. (#29)
 
 ## Phase 6: Backend API Configuration (FastAPI) <!-- phase:api-setup -->
 
-- [ ] Initialize the FastAPI application structure within the project. (#30)
-- [ ] Configure standard middlewares (CORS for Next.js frontend frontend, GZip). (#31)
-- [ ] Set up SQLite database connection using SQLAlchemy or SQLModel. (#32)
-- [ ] Define database schema and ORM models (Analyses, URLs, SEO Results, Security Results). (#33)
+- [/] Initialize the FastAPI application structure within the project. (#30)
+- [/] Configure standard middlewares (CORS for Next.js frontend frontend, GZip). (#31)
+- [/] Set up SQLite database connection using SQLAlchemy or SQLModel. (#32)
+- [/] Define database schema and ORM models (Analyses, URLs, SEO Results, Security Results). (#33)
 - [ ] Implement Alembic for database migrations. (#34)
 
 ## Phase 7: API Endpoints & Background Tasks <!-- phase:api-endpoints -->
